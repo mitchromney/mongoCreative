@@ -12,14 +12,18 @@
 <body>
 
   <div id='app' ng-app='app' ng-controller='mainCtrl'>
-    <h1> Enter your name and image URL!</h1>
+    <header>
+      <h1> Join the community!</h1>
+      <p>Enter your name and an image url and we'll change your name to Turd Ferguson. Welcome to the Ferguson Family!</p>
+    </header>
+    
     <form id="newFerguson" ng-submit="addFerguson()">
       Name: <input type="text" ng-model="Name" value=""><br> Url: <input type="url" ng-model="Url" value=""><br>
       <input type="submit" value="Submit">
     </form>
     <ul ng-if='fergusons.length' class='list center stretch'>
       <li ng-repeat='f in fergusons' class='fergusons'>
-        <h1>Turd Ferguson</h1>
+        <h1 class="shadow">Turd Ferguson</h1>
         <img class='avatar' ng-src="{{f.avatarUrl}}" />
       </li>
     </ul>

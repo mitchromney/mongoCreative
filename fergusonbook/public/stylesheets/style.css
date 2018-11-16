@@ -5,11 +5,25 @@ html, body, #app {
   padding: 0;
   margin: 0;
   font-family: helvetica;
+  background-color: palegoldenrod;
+}
+
+header {
+  background-color: cornsilk;
+  text-align: center;
+  margin-left: 25%;
+  margin-right:25%;
+  padding-bottom: 5px;
 }
 
 div, ul {
   margin: 0;
   padding: 0;
+}
+
+form {
+  padding-top: 15px;
+  text-align: center;
 }
 
 .stretch {
@@ -26,6 +40,14 @@ div, ul {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+.shadow {
+  color: #2c2c2c;
+  letter-spacing: .05em;
+  text-shadow: 
+    4px 4px 0px #d5d5d5, 
+    7px 7px 0px rgba(0, 0, 0, 0.2);
 }
 
 .h1 {
@@ -45,6 +67,6 @@ div, ul {
 .list {
   text-align: center;
   list-style: none;
-  background-color: #4FC1E9;
+  background-color: palegoldenrod;
   color: white;
 }
